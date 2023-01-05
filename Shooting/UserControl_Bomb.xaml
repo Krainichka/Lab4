@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Shooting.UserControl_Bomb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Shooting"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="100" Width="20" Height="20" >
+    <UserControl.Resources>
+        <ImageBrush x:Key="def" x:Name="def" ImageSource="Resources/bomb.png"></ImageBrush>
+        <ImageBrush x:Key="exp" x:Name="exp" ImageSource="Resources/explosion1.png"></ImageBrush>
+    </UserControl.Resources>
+    <Grid x:Name="mainGrid" Background="{StaticResource def}">
+        <TextBlock x:Name="tbBomb" Visibility="Hidden"/>
+    </Grid>
+</UserControl>
